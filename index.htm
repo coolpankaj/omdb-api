@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Assignment-6</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+</head>
+<body style="background-color: lightgrey;background-repeat: no-repeat;background-size: cover;" id="body">
+  <div class="container" id="main">
+    <form style="background-color: lightskyblue;padding: 20px;font-size: 20px;border-radius: 5px;border: 1px solid chocolate;">
+      <div class="form-row align-items-center">
+        <div class="col-md-2 my-1">
+          <label class="mr-sm-2" for="opt"></label>Search By</label>
+          <select class="custom-select mr-sm-2" id="opt">
+            <option selected>Choose...</option>
+            <option value=1>Title and Year</option>
+            <!-- <option value=2>Year</option> -->
+            <option value=2>Imdb Id</option>
+          </select>
+        </div>
+      </div>
+    </form>
+    <div class="card" id="my-card" style="margin:20px 0px;border-radius: 10px;border: 2px solid mediumpurple;">
+      <div class="card-header" style="background-color:lightblue;padding:10px 20px;font-size: 30px;">Enter values</div>
+      <div class="card-body bg-secondary text-center">
+        <div class="row justify-content-around">
+          <input class="form-control col-md-3" id="title" type="text" placeholder="Title" value="">
+          <input class="form-control col-md-2" id="year" type="text" placeholder="Year" value="">
+          <span class="col-md-1" style="color: white;">or</span>
+          <input class="form-control col-md-2" id="imdbId" type="text" placeholder="imdbId" value="">
+          <button class="form-control col-md-2" id="f-search" style="background-color: lightskyblue;cursor: pointer;" class="btn btn-primary">Search</button>
+          <!-- <button class="form-control col-md-2" id="reset1" style="background-color:lightcoral;cursor: pointer;" type="reset" class="btn btn-primary">Reset</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h3 id="heading"></h3>
+    <div class="row" id="result"></div>
+    <div id="code-button"></div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
